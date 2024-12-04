@@ -16,6 +16,8 @@ O sistema deve ser implementado como uma API, com endpoints para gerenciamento d
 - **Framework:** Utilizar o framework NestJS para desenvolvimento da API ou a combinação Node.js + Express
 - **Arquitetura:** seguir uma arquitetura baseada em módulos, contendo controllers, services e repositórios
 - **Autenticação:** desenvolver um sistema de autenticação baseado em e-mail + senha e login através de Token JWT
+- **ORM:** para este projeto, utilizar um ORM a sua escolha, como por exemplo TypeORM, Prisma, MikroORM, etc
+- **Validações:** executar validações de entrada recebidas via API e retornar as mensagens de erro com códigos adequados para a resposta gerada (Not Found, Bad Request, Created, etc)
 - **Tarefas:**
   - Rotas relacionadas a autenticação:
     - Realizar login na aplicação
@@ -30,16 +32,21 @@ O sistema deve ser implementado como uma API, com endpoints para gerenciamento d
     - Cadastro de um novo cliente
     - Listagem de clientes existentes
     - Leitura de um cliente específico
+    - Atualização de um cliente existente
     - Remoção de um cliente específico
   - Vendas
     - Criação de uma nova venda
+    - Listagem de vendas existentes
 
 ### Persistência de Dados
 
-- Para este projeto, não é necessário realizar a persistência de dados, os dados podem ser salvos localmente em memória
-- Uma possível solução seguindo o modelo de "repositórios" seria criar um repositório "virtual" apenas em memória
-- Modelar corretamente as "entidades" que solucionam os problemas propostos
-- Acrescentar especificações que julgar necessárias caso não tenham sido informadas
+- Utilizar um banco de dados a sua escolha
+- Poderá ser utilizado um banco de dados relacional como PostgreSQL, MySQL, etc, ou não relacional, como MongoDB
+- Caso escolha um banco de dados relacional, implementar corretamente os relacionamentos propostos
+
+### Docker e Docker Compose
+
+- Utilizar Docker e Docker Compose para realizar a orquestração de containers da aplicação
 
 ### Git & GitHub
 
@@ -62,8 +69,12 @@ O projeto será avaliado com base nos seguinte critérios:
 - [Documentação Node.js](https://nodejs.org/en)
 - [Documentação NestJS](https://nestjs.com/)
 - [Documentação Express](https://expressjs.com/)
+- [Documentação Docker](https://docs.docker.com/)
+- [Documentação Docker Compose](https://docs.docker.com/compose/)
+- [Documentação TypeORM](https://typeorm.io/)
 
 Caso possua acesso a plataforma Alura:
 
+- [Nest.js: Persistindo dados com TypeORM e PostgreSQL](https://cursos.alura.com.br/course/nest-js-typeorm)
 - [Nest.js: criando uma API Restful](https://cursos.alura.com.br/course/nestjs-criando-api-resftul)
 - [APIs com Node.js e Express](https://cursos.alura.com.br/formacao-node-js-express)
