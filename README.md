@@ -12,6 +12,7 @@ Para novos projetos, a preferência é a utilização do framework NestJS para e
 
 - [Desafio Backend Start:](backend-start.md) criação de uma API simples em Node.js para um sistema de gerenciamento de tarefas do tipo to-do list
 - [Desafio Backend Boost:](backend-boost.md) criação de uma API em Node.js para gerenciamento do sistema de uma loja (produtos, clientes e vendas), preferencialmente utilizando NestJS, utilizando de ORM's, Docker e Docker Compose e autenticação JWT
+- [Desafio Backend OCP:](backend-ocp.md) Criação de uma API em Node.js para gerenciamento de módulos de um sistema de OCP (Organismo de Certificação de Produtos) preferencialmente utilizando NestJS, TypeORM, Docker e Docker Compose e autenticação JWT
 
 ## Desafios Frontend
 
